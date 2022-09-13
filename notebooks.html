@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>tugas1 &#8212; Data Mining</title>
+    <title>Disimilarity (Tugas 1) &#8212; Aisyiyah Maulana W.</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="tugas 2" href="Tugas-2.html" />
+    <link rel="next" title="Diskritisasi (Tugas 2)" href="Tugas-2.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -97,7 +97,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Data Mining</h1>
+      <h1 class="site-logo" id="site-title">Aisyiyah Maulana W.</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -115,23 +115,23 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Tugas Data Mining
+  Data Mining Project
  </span>
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   tugas1
+   Disimilarity (Tugas 1)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas-2.html">
-   tugas 2
+   Diskritisasi (Tugas 2)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Implementasi%20K-NN.html">
-   Implementasi K-NN
+   Konsep/Algoritma K-NN
   </a>
  </li>
 </ul>
@@ -330,7 +330,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>tugas1</h1>
+                <h1>Disimilarity (Tugas 1)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -342,8 +342,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas1">
-<h1>tugas1<a class="headerlink" href="#tugas1" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="disimilarity-tugas-1">
+<h1>Disimilarity (Tugas 1)<a class="headerlink" href="#disimilarity-tugas-1" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -368,7 +368,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3b76dc9f-1198-445b-887d-127c39862656">
+  <div id="df-91cd131c-84a0-4c93-9d29-d15ce1896543">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -440,14 +440,14 @@ title="Print to PDF"
       <th>AFG</th>
       <td>Asia</td>
       <td>Afghanistan</td>
-      <td>2022-09-11</td>
-      <td>195925.0</td>
-      <td>294.0</td>
-      <td>251.714</td>
-      <td>7787.0</td>
-      <td>0.0</td>
-      <td>0.714</td>
-      <td>4885.976</td>
+      <td>2022-09-12</td>
+      <td>196182.0</td>
+      <td>257.0</td>
+      <td>261.000</td>
+      <td>7789.0</td>
+      <td>2.0</td>
+      <td>0.857</td>
+      <td>4892.385</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -464,14 +464,14 @@ title="Print to PDF"
       <th>OWID_AFR</th>
       <td>NaN</td>
       <td>Africa</td>
-      <td>2022-09-11</td>
-      <td>12337339.0</td>
-      <td>401.0</td>
-      <td>1182.571</td>
-      <td>256632.0</td>
-      <td>0.0</td>
-      <td>10.143</td>
-      <td>8860.521</td>
+      <td>2022-09-12</td>
+      <td>12339242.0</td>
+      <td>1903.0</td>
+      <td>1089.857</td>
+      <td>256635.0</td>
+      <td>3.0</td>
+      <td>9.714</td>
+      <td>8861.888</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -488,14 +488,14 @@ title="Print to PDF"
       <th>ALB</th>
       <td>Europe</td>
       <td>Albania</td>
-      <td>2022-09-11</td>
-      <td>331036.0</td>
-      <td>88.0</td>
-      <td>120.429</td>
-      <td>3584.0</td>
-      <td>0.0</td>
-      <td>0.143</td>
-      <td>115961.341</td>
+      <td>2022-09-12</td>
+      <td>331053.0</td>
+      <td>17.0</td>
+      <td>118.857</td>
+      <td>3585.0</td>
+      <td>1.0</td>
+      <td>0.286</td>
+      <td>115967.296</td>
       <td>...</td>
       <td>7.100</td>
       <td>51.200</td>
@@ -512,14 +512,14 @@ title="Print to PDF"
       <th>DZA</th>
       <td>Africa</td>
       <td>Algeria</td>
-      <td>2022-09-11</td>
-      <td>270539.0</td>
-      <td>7.0</td>
-      <td>13.714</td>
+      <td>2022-09-12</td>
+      <td>270551.0</td>
+      <td>12.0</td>
+      <td>12.857</td>
       <td>6879.0</td>
       <td>0.0</td>
       <td>0.000</td>
-      <td>6123.844</td>
+      <td>6124.116</td>
       <td>...</td>
       <td>0.700</td>
       <td>30.400</td>
@@ -536,7 +536,7 @@ title="Print to PDF"
       <th>AND</th>
       <td>Europe</td>
       <td>Andorra</td>
-      <td>2022-09-11</td>
+      <td>2022-09-12</td>
       <td>46113.0</td>
       <td>0.0</td>
       <td>12.286</td>
@@ -584,7 +584,7 @@ title="Print to PDF"
       <th>WLF</th>
       <td>Oceania</td>
       <td>Wallis and Futuna</td>
-      <td>2022-09-11</td>
+      <td>2022-09-12</td>
       <td>761.0</td>
       <td>0.0</td>
       <td>0.000</td>
@@ -608,14 +608,14 @@ title="Print to PDF"
       <th>OWID_WRL</th>
       <td>NaN</td>
       <td>World</td>
-      <td>2022-09-11</td>
-      <td>608521626.0</td>
-      <td>312969.0</td>
-      <td>498558.143</td>
-      <td>6513971.0</td>
-      <td>740.0</td>
-      <td>1744.286</td>
-      <td>76937.529</td>
+      <td>2022-09-12</td>
+      <td>609030270.0</td>
+      <td>508785.0</td>
+      <td>504870.571</td>
+      <td>6515416.0</td>
+      <td>1446.0</td>
+      <td>1755.571</td>
+      <td>77001.839</td>
       <td>...</td>
       <td>6.434</td>
       <td>34.635</td>
@@ -632,7 +632,7 @@ title="Print to PDF"
       <th>YEM</th>
       <td>Asia</td>
       <td>Yemen</td>
-      <td>2022-09-11</td>
+      <td>2022-09-12</td>
       <td>11932.0</td>
       <td>0.0</td>
       <td>0.143</td>
@@ -656,14 +656,14 @@ title="Print to PDF"
       <th>ZMB</th>
       <td>Africa</td>
       <td>Zambia</td>
-      <td>2022-09-11</td>
-      <td>333229.0</td>
-      <td>9.0</td>
-      <td>22.143</td>
+      <td>2022-09-12</td>
+      <td>333234.0</td>
+      <td>5.0</td>
+      <td>21.143</td>
       <td>4017.0</td>
       <td>0.0</td>
       <td>0.000</td>
-      <td>17112.251</td>
+      <td>17112.508</td>
       <td>...</td>
       <td>3.100</td>
       <td>24.700</td>
@@ -680,14 +680,14 @@ title="Print to PDF"
       <th>ZWE</th>
       <td>Africa</td>
       <td>Zimbabwe</td>
-      <td>2022-09-11</td>
-      <td>256870.0</td>
-      <td>0.0</td>
-      <td>15.286</td>
+      <td>2022-09-12</td>
+      <td>256888.0</td>
+      <td>18.0</td>
+      <td>17.000</td>
       <td>5596.0</td>
       <td>0.0</td>
       <td>0.000</td>
-      <td>16060.876</td>
+      <td>16062.001</td>
       <td>...</td>
       <td>1.600</td>
       <td>30.700</td>
@@ -704,7 +704,7 @@ title="Print to PDF"
 </table>
 <p>230 rows × 66 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3b76dc9f-1198-445b-887d-127c39862656')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-91cd131c-84a0-4c93-9d29-d15ce1896543')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -755,12 +755,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3b76dc9f-1198-445b-887d-127c39862656 button.colab-df-convert');
+          document.querySelector('#df-91cd131c-84a0-4c93-9d29-d15ce1896543 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3b76dc9f-1198-445b-887d-127c39862656');
+          const element = document.querySelector('#df-91cd131c-84a0-4c93-9d29-d15ce1896543');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1176,7 +1176,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="Tugas-2.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">tugas 2</p>
+        <p class="prev-next-title">Diskritisasi (Tugas 2)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -1187,7 +1187,7 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By Aisyiyah Maulana Wibawati<br/>
+    By 20-122 Aisyiyah Maulana Wibawati<br/>
   
       &copy; Copyright 2022.<br/>
 </p>
