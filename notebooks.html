@@ -146,7 +146,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas-6.html">
-   Decision Trees (Tugas 6)
+   Gini Index - Decision Trees (Tugas 6)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="UTS.html">
+   UTS (Penambangan Data)
   </a>
  </li>
 </ul>
@@ -383,7 +388,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-5409dd1b-a8f6-49e1-b96f-d20afe7fdb46">
+  <div id="df-dd6a0abb-d353-48fc-b800-2e7025926cb8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -455,14 +460,14 @@ title="Print to PDF"
       <th>AFG</th>
       <td>Asia</td>
       <td>Afghanistan</td>
-      <td>2022-10-04</td>
-      <td>199690.0</td>
-      <td>145.0</td>
-      <td>134.286</td>
-      <td>7803.0</td>
-      <td>0.0</td>
+      <td>2022-10-09</td>
+      <td>200372.0</td>
+      <td>170.0</td>
+      <td>140.857</td>
+      <td>7806.0</td>
+      <td>2.0</td>
       <td>0.714</td>
-      <td>4979.867</td>
+      <td>4996.875</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -479,14 +484,14 @@ title="Print to PDF"
       <th>OWID_AFR</th>
       <td>NaN</td>
       <td>Africa</td>
-      <td>2022-10-04</td>
-      <td>12360002.0</td>
-      <td>1217.0</td>
-      <td>866.286</td>
-      <td>256775.0</td>
-      <td>5.0</td>
-      <td>5.857</td>
-      <td>8876.797</td>
+      <td>2022-10-09</td>
+      <td>12362975.0</td>
+      <td>568.0</td>
+      <td>706.286</td>
+      <td>256793.0</td>
+      <td>0.0</td>
+      <td>4.143</td>
+      <td>8878.932</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -503,14 +508,14 @@ title="Print to PDF"
       <th>ALB</th>
       <td>Europe</td>
       <td>Albania</td>
-      <td>2022-10-04</td>
-      <td>332337.0</td>
-      <td>47.0</td>
-      <td>38.714</td>
+      <td>2022-10-09</td>
+      <td>332494.0</td>
+      <td>22.0</td>
+      <td>29.857</td>
       <td>3589.0</td>
       <td>0.0</td>
       <td>0.000</td>
-      <td>116417.079</td>
+      <td>116472.076</td>
       <td>...</td>
       <td>7.100</td>
       <td>51.200</td>
@@ -527,14 +532,14 @@ title="Print to PDF"
       <th>DZA</th>
       <td>Africa</td>
       <td>Algeria</td>
-      <td>2022-10-04</td>
-      <td>270690.0</td>
-      <td>8.0</td>
-      <td>5.143</td>
-      <td>6879.0</td>
+      <td>2022-10-09</td>
+      <td>270707.0</td>
+      <td>6.0</td>
+      <td>4.000</td>
+      <td>6881.0</td>
       <td>0.0</td>
-      <td>0.000</td>
-      <td>6127.262</td>
+      <td>0.286</td>
+      <td>6127.647</td>
       <td>...</td>
       <td>0.700</td>
       <td>30.400</td>
@@ -551,14 +556,14 @@ title="Print to PDF"
       <th>AND</th>
       <td>Europe</td>
       <td>Andorra</td>
-      <td>2022-10-04</td>
-      <td>46227.0</td>
+      <td>2022-10-09</td>
+      <td>46275.0</td>
       <td>0.0</td>
-      <td>11.429</td>
+      <td>6.857</td>
       <td>155.0</td>
       <td>0.0</td>
       <td>0.000</td>
-      <td>584900.170</td>
+      <td>585507.503</td>
       <td>...</td>
       <td>29.000</td>
       <td>37.800</td>
@@ -599,7 +604,7 @@ title="Print to PDF"
       <th>WLF</th>
       <td>Oceania</td>
       <td>Wallis and Futuna</td>
-      <td>2022-10-04</td>
+      <td>2022-10-09</td>
       <td>761.0</td>
       <td>0.0</td>
       <td>0.000</td>
@@ -623,14 +628,14 @@ title="Print to PDF"
       <th>OWID_WRL</th>
       <td>NaN</td>
       <td>World</td>
-      <td>2022-10-04</td>
-      <td>619115458.0</td>
-      <td>644825.0</td>
-      <td>435188.143</td>
-      <td>6549664.0</td>
-      <td>1560.0</td>
-      <td>1385.000</td>
-      <td>78276.945</td>
+      <td>2022-10-09</td>
+      <td>621366370.0</td>
+      <td>218112.0</td>
+      <td>456359.571</td>
+      <td>6557231.0</td>
+      <td>528.0</td>
+      <td>1415.714</td>
+      <td>78561.535</td>
       <td>...</td>
       <td>6.434</td>
       <td>34.635</td>
@@ -647,14 +652,14 @@ title="Print to PDF"
       <th>YEM</th>
       <td>Asia</td>
       <td>Yemen</td>
-      <td>2022-10-04</td>
-      <td>11935.0</td>
+      <td>2022-10-09</td>
+      <td>11939.0</td>
       <td>0.0</td>
-      <td>0.000</td>
-      <td>2157.0</td>
+      <td>0.571</td>
+      <td>2158.0</td>
       <td>0.0</td>
-      <td>0.000</td>
-      <td>361.868</td>
+      <td>0.143</td>
+      <td>361.989</td>
       <td>...</td>
       <td>7.600</td>
       <td>29.200</td>
@@ -671,10 +676,10 @@ title="Print to PDF"
       <th>ZMB</th>
       <td>Africa</td>
       <td>Zambia</td>
-      <td>2022-10-04</td>
+      <td>2022-10-09</td>
       <td>333555.0</td>
       <td>0.0</td>
-      <td>7.429</td>
+      <td>0.857</td>
       <td>4017.0</td>
       <td>0.0</td>
       <td>0.000</td>
@@ -695,14 +700,14 @@ title="Print to PDF"
       <th>ZWE</th>
       <td>Africa</td>
       <td>Zimbabwe</td>
-      <td>2022-10-04</td>
-      <td>257568.0</td>
-      <td>30.0</td>
-      <td>27.429</td>
-      <td>5603.0</td>
+      <td>2022-10-09</td>
+      <td>257655.0</td>
       <td>0.0</td>
-      <td>0.571</td>
-      <td>16104.518</td>
+      <td>19.714</td>
+      <td>5604.0</td>
+      <td>0.0</td>
+      <td>0.286</td>
+      <td>16109.958</td>
       <td>...</td>
       <td>1.600</td>
       <td>30.700</td>
@@ -719,7 +724,7 @@ title="Print to PDF"
 </table>
 <p>232 rows × 66 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-5409dd1b-a8f6-49e1-b96f-d20afe7fdb46')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-dd6a0abb-d353-48fc-b800-2e7025926cb8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -770,12 +775,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-5409dd1b-a8f6-49e1-b96f-d20afe7fdb46 button.colab-df-convert');
+          document.querySelector('#df-dd6a0abb-d353-48fc-b800-2e7025926cb8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-5409dd1b-a8f6-49e1-b96f-d20afe7fdb46');
+          const element = document.querySelector('#df-dd6a0abb-d353-48fc-b800-2e7025926cb8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -809,19 +814,19 @@ title="Print to PDF"
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/drive.py</span> in <span class="ni">mount</span><span class="nt">(mountpoint, force_remount, timeout_ms)</span>
-<span class="g g-Whitespace">    </span><span class="mi">103</span>       <span class="n">force_remount</span><span class="o">=</span><span class="n">force_remount</span><span class="p">,</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/drive.py</span> in <span class="ni">mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, readonly)</span>
 <span class="g g-Whitespace">    </span><span class="mi">104</span>       <span class="n">timeout_ms</span><span class="o">=</span><span class="n">timeout_ms</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">105</span>       <span class="n">ephemeral</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">106</span> 
+<span class="g g-Whitespace">    </span><span class="mi">105</span>       <span class="n">ephemeral</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">106</span>       <span class="n">readonly</span><span class="o">=</span><span class="n">readonly</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">107</span> 
+<span class="g g-Whitespace">    </span><span class="mi">108</span> 
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/drive.py</span> in <span class="ni">_mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, ephemeral)</span>
-<span class="g g-Whitespace">    </span><span class="mi">118</span>   <span class="k">if</span> <span class="n">ephemeral</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">119</span>     <span class="n">_message</span><span class="o">.</span><span class="n">blocking_request</span><span class="p">(</span>
-<span class="ne">--&gt; </span><span class="mi">120</span>         <span class="s1">&#39;request_auth&#39;</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;authType&#39;</span><span class="p">:</span> <span class="s1">&#39;dfs_ephemeral&#39;</span><span class="p">},</span> <span class="n">timeout_sec</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">121</span> 
-<span class="g g-Whitespace">    </span><span class="mi">122</span>   <span class="n">mountpoint</span> <span class="o">=</span> <span class="n">_os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">mountpoint</span><span class="p">)</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/drive.py</span> in <span class="ni">_mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, ephemeral, readonly)</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span>   <span class="k">if</span> <span class="n">ephemeral</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span>     <span class="n">_message</span><span class="o">.</span><span class="n">blocking_request</span><span class="p">(</span>
+<span class="ne">--&gt; </span><span class="mi">125</span>         <span class="s1">&#39;request_auth&#39;</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;authType&#39;</span><span class="p">:</span> <span class="s1">&#39;dfs_ephemeral&#39;</span><span class="p">},</span> <span class="n">timeout_sec</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">126</span> 
+<span class="g g-Whitespace">    </span><span class="mi">127</span>   <span class="n">mountpoint</span> <span class="o">=</span> <span class="n">_os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">mountpoint</span><span class="p">)</span>
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/_message.py</span> in <span class="ni">blocking_request</span><span class="nt">(request_type, request, timeout_sec, parent)</span>
 <span class="g g-Whitespace">    </span><span class="mi">169</span>   <span class="n">request_id</span> <span class="o">=</span> <span class="n">send_request</span><span class="p">(</span>
