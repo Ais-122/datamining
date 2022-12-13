@@ -395,128 +395,6 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">HTTPError</span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mf">732e284</span><span class="n">cfcfd</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">dataset_url</span><span class="o">=</span><span class="s2">&quot;https://raw.githubusercontent.com/Ais-122/datamining/gh-pages/diabetes.csv&quot;</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">dataset_url</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="nn">/usr/local/lib/python3.8/dist-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">309</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">310</span>                 <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">311</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">312</span> 
-<span class="g g-Whitespace">    </span><span class="mi">313</span>         <span class="k">return</span> <span class="n">wrapper</span>
-
-<span class="nn">/usr/local/lib/python3.8/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">584</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">585</span> 
-<span class="ne">--&gt; </span><span class="mi">586</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">587</span> 
-<span class="g g-Whitespace">    </span><span class="mi">588</span> 
-
-<span class="nn">/usr/local/lib/python3.8/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">480</span> 
-<span class="g g-Whitespace">    </span><span class="mi">481</span>     <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">482</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">483</span> 
-<span class="g g-Whitespace">    </span><span class="mi">484</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
-
-<span class="nn">/usr/local/lib/python3.8/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">809</span>             <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">810</span> 
-<span class="ne">--&gt; </span><span class="mi">811</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">812</span> 
-<span class="g g-Whitespace">    </span><span class="mi">813</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/usr/local/lib/python3.8/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1038</span>             <span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1039</span>         <span class="c1"># error: Too many arguments for &quot;ParserBase&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1040</span>         <span class="k">return</span> <span class="n">mapping</span><span class="p">[</span><span class="n">engine</span><span class="p">](</span><span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>  <span class="c1"># type: ignore[call-arg]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1041</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1042</span>     <span class="k">def</span> <span class="nf">_failover_to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/usr/local/lib/python3.8/dist-packages/pandas/io/parsers/c_parser_wrapper.py</span> in <span class="ni">__init__</span><span class="nt">(self, src, **kwds)</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span> 
-<span class="g g-Whitespace">     </span><span class="mi">50</span>         <span class="c1"># open handles</span>
-<span class="ne">---&gt; </span><span class="mi">51</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_open_handles</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-<span class="g g-Whitespace">     </span><span class="mi">53</span> 
-
-<span class="nn">/usr/local/lib/python3.8/dist-packages/pandas/io/parsers/base_parser.py</span> in <span class="ni">_open_handles</span><span class="nt">(self, src, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">220</span>         <span class="n">Let</span> <span class="n">the</span> <span class="n">readers</span> <span class="nb">open</span> <span class="n">IOHandles</span> <span class="n">after</span> <span class="n">they</span> <span class="n">are</span> <span class="n">done</span> <span class="k">with</span> <span class="n">their</span> <span class="n">potential</span> <span class="n">raises</span><span class="o">.</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">222</span><span class="s2">         self.handles = get_handle(</span>
-<span class="g g-Whitespace">    </span><span class="mi">223</span><span class="s2">             src,</span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span><span class="s2">             &quot;r&quot;,</span>
-
-<span class="nn">/usr/local/lib/python3.8/dist-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">607</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">608</span><span class="s2">     # open URLs</span>
-<span class="ne">--&gt; </span><span class="mi">609</span><span class="s2">     ioargs = _get_filepath_or_buffer(</span>
-<span class="g g-Whitespace">    </span><span class="mi">610</span><span class="s2">         path_or_buf,</span>
-<span class="g g-Whitespace">    </span><span class="mi">611</span><span class="s2">         encoding=encoding,</span>
-
-<span class="nn">/usr/local/lib/python3.8/dist-packages/pandas/io/common.py</span> in <span class="ni">_get_filepath_or_buffer</span><span class="nt">(filepath_or_buffer, encoding, compression, mode, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">310</span><span class="s2">         # assuming storage_options is to be interpreted as headers</span>
-<span class="g g-Whitespace">    </span><span class="mi">311</span><span class="s2">         req_info = urllib.request.Request(filepath_or_buffer, headers=storage_options)</span>
-<span class="ne">--&gt; </span><span class="mi">312</span><span class="s2">         with urlopen(req_info) as req:</span>
-<span class="g g-Whitespace">    </span><span class="mi">313</span><span class="s2">             content_encoding = req.headers.get(&quot;Content-Encoding&quot;, None)</span>
-<span class="g g-Whitespace">    </span><span class="mi">314</span><span class="s2">             if content_encoding == &quot;gzip&quot;:</span>
-
-<span class="nn">/usr/local/lib/python3.8/dist-packages/pandas/io/common.py</span> in <span class="ni">urlopen</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">210</span><span class="s2">     import urllib.request</span>
-<span class="g g-Whitespace">    </span><span class="mi">211</span><span class="s2"> </span>
-<span class="ne">--&gt; </span><span class="mi">212</span><span class="s2">     return urllib.request.urlopen(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">213</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">214</span><span class="s2"> </span>
-
-<span class="nn">/usr/lib/python3.8/urllib/request.py</span> in <span class="ni">urlopen</span><span class="nt">(url, data, timeout, cafile, capath, cadefault, context)</span>
-<span class="g g-Whitespace">    </span><span class="mi">220</span><span class="s2">     else:</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span><span class="s2">         opener = _opener</span>
-<span class="ne">--&gt; </span><span class="mi">222</span><span class="s2">     return opener.open(url, data, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">223</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span><span class="s2"> def install_opener(opener):</span>
-
-<span class="nn">/usr/lib/python3.8/urllib/request.py</span> in <span class="ni">open</span><span class="nt">(self, fullurl, data, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">529</span><span class="s2">         for processor in self.process_response.get(protocol, []):</span>
-<span class="g g-Whitespace">    </span><span class="mi">530</span><span class="s2">             meth = getattr(processor, meth_name)</span>
-<span class="ne">--&gt; </span><span class="mi">531</span><span class="s2">             response = meth(req, response)</span>
-<span class="g g-Whitespace">    </span><span class="mi">532</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">533</span><span class="s2">         return response</span>
-
-<span class="nn">/usr/lib/python3.8/urllib/request.py</span> in <span class="ni">http_response</span><span class="nt">(self, request, response)</span>
-<span class="g g-Whitespace">    </span><span class="mi">638</span><span class="s2">         # request was successfully received, understood, and accepted.</span>
-<span class="g g-Whitespace">    </span><span class="mi">639</span><span class="s2">         if not (200 &lt;= code &lt; 300):</span>
-<span class="ne">--&gt; </span><span class="mi">640</span><span class="s2">             response = self.parent.error(</span>
-<span class="g g-Whitespace">    </span><span class="mi">641</span><span class="s2">                 &#39;http&#39;, request, response, code, msg, hdrs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">642</span><span class="s2"> </span>
-
-<span class="nn">/usr/lib/python3.8/urllib/request.py</span> in <span class="ni">error</span><span class="nt">(self, proto, *args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">567</span><span class="s2">         if http_err:</span>
-<span class="g g-Whitespace">    </span><span class="mi">568</span><span class="s2">             args = (dict, &#39;default&#39;, &#39;http_error_default&#39;) + orig_args</span>
-<span class="ne">--&gt; </span><span class="mi">569</span><span class="s2">             return self._call_chain(*args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">570</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">571</span><span class="s2"> # XXX probably also want an abstract factory that knows when it makes</span>
-
-<span class="nn">/usr/lib/python3.8/urllib/request.py</span> in <span class="ni">_call_chain</span><span class="nt">(self, chain, kind, meth_name, *args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">500</span><span class="s2">         for handler in handlers:</span>
-<span class="g g-Whitespace">    </span><span class="mi">501</span><span class="s2">             func = getattr(handler, meth_name)</span>
-<span class="ne">--&gt; </span><span class="mi">502</span><span class="s2">             result = func(*args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">503</span><span class="s2">             if result is not None:</span>
-<span class="g g-Whitespace">    </span><span class="mi">504</span><span class="s2">                 return result</span>
-
-<span class="nn">/usr/lib/python3.8/urllib/request.py</span> in <span class="ni">http_error_default</span><span class="nt">(self, req, fp, code, msg, hdrs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">647</span><span class="s2"> class HTTPDefaultErrorHandler(BaseHandler):</span>
-<span class="g g-Whitespace">    </span><span class="mi">648</span><span class="s2">     def http_error_default(self, req, fp, code, msg, hdrs):</span>
-<span class="ne">--&gt; </span><span class="mi">649</span><span class="s2">         raise HTTPError(req.full_url, code, msg, hdrs, fp)</span>
-<span class="g g-Whitespace">    </span><span class="mi">650</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">651</span><span class="s2"> class HTTPRedirectHandler(BaseHandler):</span>
-
-<span class="ne">HTTPError</span>: HTTP Error 404: Not Found
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -526,7 +404,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a4e03f70-e477-4200-8ab1-159ba9188868">
+  <div id="df-7bab99fc-8898-4f2c-b7dc-16973c2f6d1a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -693,7 +571,7 @@ title="Print to PDF"
 </table>
 <p>768 rows × 8 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a4e03f70-e477-4200-8ab1-159ba9188868')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7bab99fc-8898-4f2c-b7dc-16973c2f6d1a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -744,12 +622,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a4e03f70-e477-4200-8ab1-159ba9188868 button.colab-df-convert');
+          document.querySelector('#df-7bab99fc-8898-4f2c-b7dc-16973c2f6d1a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a4e03f70-e477-4200-8ab1-159ba9188868');
+          const element = document.querySelector('#df-7bab99fc-8898-4f2c-b7dc-16973c2f6d1a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -794,7 +672,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-df1626fa-4d68-4f9b-b14f-ed22a5fde3fc">
+  <div id="df-9dfdb2d5-93ce-4fb1-92a2-1640786d1d9b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -887,7 +765,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-df1626fa-4d68-4f9b-b14f-ed22a5fde3fc')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9dfdb2d5-93ce-4fb1-92a2-1640786d1d9b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -938,12 +816,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-df1626fa-4d68-4f9b-b14f-ed22a5fde3fc button.colab-df-convert');
+          document.querySelector('#df-9dfdb2d5-93ce-4fb1-92a2-1640786d1d9b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-df1626fa-4d68-4f9b-b14f-ed22a5fde3fc');
+          const element = document.querySelector('#df-9dfdb2d5-93ce-4fb1-92a2-1640786d1d9b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
